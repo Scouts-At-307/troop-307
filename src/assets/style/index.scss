@@ -1,0 +1,26 @@
+@charset "utf8";
+/** Import the Bulma variables */
+// @import "variables";
+
+// /** Import Bulma */
+// @import "~bulma";
+
+// /** Import overrides */
+// @import "overrides";
+
+// Bulmaswatch
+@import "~bulmaswatch/materia/variables";
+@import "~bulma/sass/utilities/all";
+
+// Custom variables
+$primary: #013A7A;
+
+$secondary: #e53935;
+$secondary-invert: findColorInvert($secondary) !default;
+$custom-colors: (
+    "secondary":($secondary, $secondary-invert),
+);
+
+@import "~bulma";
+
+@import "~bulmaswatch/materia/overrides";
