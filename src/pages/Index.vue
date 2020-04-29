@@ -1,16 +1,18 @@
 <template>
   <Layout>
     <!-- Author intro -->
-    <Author :show-title="true" />
+    <Hero :show-title="true" />
 
     <!-- List posts -->
-    <div class="posts">
-      <PostCard
-        v-for="edge in $page.posts.edges"
-        :key="edge.node.id"
-        :post="edge.node"
-      />
-    </div>
+    <section class="section posts">
+      <div class="container">
+        <PostCard
+          v-for="edge in $page.posts.edges"
+          :key="edge.node.id"
+          :post="edge.node"
+        />
+      </div>
+    </section>
   </Layout>
 </template>
 
@@ -38,16 +40,16 @@ query {
 </page-query>
 
 <script>
-import Author from '~/components/Author.vue';
+import Hero from '~/components/Hero.vue';
 import PostCard from '~/components/PostCard.vue';
 
 export default {
   components: {
-    Author,
+    Hero,
     PostCard,
   },
   metaInfo: {
-    title: 'Hello, world!',
+    title: 'Home',
   },
 };
 </script>

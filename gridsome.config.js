@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Troop 307',
-  siteDescription: 'A baseline Gridsome starter to get you going with Bulma.',
+  siteDescription: 'Boy Scout Troop chartered by Saxe Gotha Presbyterian Church in Lexington, South Carolina.',
 
   templates: {
     Post: '/:title',
