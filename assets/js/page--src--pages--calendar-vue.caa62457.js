@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{188:function(n,t,e){"use strict";e.r(t);var a=e(19),l=Object(a.a)({},(function(){var n=this.$createElement,t=this._self._c||n;return t("Layout",[t("div",{staticClass:"container"},[t("FullCalendar")],1)])}),[],!1,null,null,null);t.default=l.exports}}]);
