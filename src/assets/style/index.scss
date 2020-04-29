@@ -10,7 +10,7 @@
 
 // Bulmaswatch
 @import "~bulmaswatch/materia/variables";
-@import "~bulma/sass/utilities/all";
+@import "~bulma/sass/utilities/functions";
 
 // Custom variables
 $primary: #013A7A;
@@ -24,3 +24,29 @@ $custom-colors: (
 @import "~bulma";
 
 @import "~bulmaswatch/materia/overrides";
+
+.card {
+    margin: 1em 0;
+}
+
+// Footer Styles
+html {
+    position: relative;
+    min-height: 100%;
+}
+.bsa-footer {
+    width: 100%;
+    height: calc(100vw / 8.6588 - 2px);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-image: url('../images/footer.svg');
+    background-color: white;
+}
+@media (max-width: 768px) {
+    .bsa-footer {
+        background-size: cover;
+        height: 125px;
+    }
+}
