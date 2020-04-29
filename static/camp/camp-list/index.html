@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Troop 307 - Summer Camp Checklist</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+            .list-header {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body onclick="removeTask()">
+        <div class="container">
+            <div class="card" style="margin:10vh 0;">
+                <div class="card-header default-color-dark white-text">
+                    Summer Camp Checklist
+                    <a id="reset" class="badge badge-danger badge-pill" style="margin-left:5px;">Reset</a>
+                </div>
+                <ul id="taskList" class="list-group">
+                    <li class="list-group-item justify-content-between list-header">Paperwork</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Medical Form</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Merit Badge Books</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Merit Badge Worksheets</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Notebook with paper and pens or pencils</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Merit Badge Work Already Completed</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Scout Handbook</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Merit Badge Schedule</li>
+                    <li class="list-group-item justify-content-between list-header">Must Haves</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Footlocker (no more than 13 inches tall)</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Key or Combination Lock</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Scout Uniform (Class A and Class B)</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Sweat Shirt and/or Jacket</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Swim Suit</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Raincoat or Poncho</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Sneakers</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Extra Shoes (Close Toed)</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Socks</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Underwear</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Shorts</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Belt</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Insect Repellent</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Toothbrush</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Toothpaste</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Soap</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Deodorant</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Comb and/or Hair Brush</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Sunscreen</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Water Bottle</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Handkerchif or Tissues</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Shower Shoes</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Washcloth</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Two towels</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Long sleeve, button-up shirt and long pants if taking any waterfront merit badge</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Bedding (Pillow, Blanket, Sheets or Sleeping Bag)</li>
+                    <li class="list-group-item justify-content-between list-header">Extras</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Flashlight and/or Headlamp</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Pocketknife</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Personal First Aid Kit</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Fishing Gear</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Sunglasses</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Compass (required for orienteering)</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Camera</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Mosquito Netting for Cot</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Spending Money ($20 - $30 Suggested)</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Small Day Pack / Book Bag</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Watch</li>
+                    <li class="list-group-item justify-content-between list-group-item-action list-item">Wallet with ID</li>
+                    <li class="list-group-item justify-content-between list-header">What to Leave at Home</li>
+                    <li class="list-group-item justify-content-between">Fixed Blade Knives</li>
+                    <li class="list-group-item justify-content-between">Electronic Devices and Games</li>
+                    <li class="list-group-item justify-content-between">Firearms and Ammunition</li>
+                    <li class="list-group-item justify-content-between">Fireworks</li>
+                    <li class="list-group-item justify-content-between">Bicycles</li>
+                    <li class="list-group-item justify-content-between">Open-toed Shoes</li>
+                </ul>
+                <div class="card-body">
+
+                    <p>
+                        Scouts are to be at the Scout Hut by 8AM Sunday morning in Class A uniforms ready to go. Bring a bag lunch for Sunday. Pack a swimsuit, 
+                        swim shoes, towel on top of gear as the swim test is the first activity after the Troop orientation. We will be returning Saturday by 1:30PM. 
+                        It’s a good idea to label all items/clothing/bedding. Scouters do laundry for the Troop Wednesday evening  and would like each boy to 
+                        contribute $1 for costs. This is requested, not mandatory. Scouts have several opportunities to earn money for Camp and are encouraged to 
+                        take advantage of these. If any Scout still needs financial assistance after taking advantage of these opportunities, please speak with Mike 
+                        Gallagher, Robert Sears or Richard Brock.
+                    </p>
+
+                    <b>Visitors Night</b>
+                    <p>
+                        Parents and visitors are permitted to eat in the dining hall on WEDNESDAY NIGHT ONLY with their Scout and his unit BY PRIOR TICKET 
+                        PURCHASE AT THE CAMP DIRECTORS OFFICE by no later than Wednesday. WEDNESDAY is Visitors Night. Parents are encouraged to send a 
+                        Care Package to their Scout and NOT attend Visitors night. Many Scouts, especially first year Scouts, tend to become homesick and end up 
+                        going home with their parents so the Troop does not encourage visitation. This is a growth opportunity for your Scout.
+                    </p>
+
+                    <b>Medication</b>
+                    <p>
+                        ALL medications will be turned in to and administered by Troop 307 Leaders and/or Camp Rainey Mountain Medical Staff.
+                    </p>
+                    
+                    <b>Emergencies</b>
+                    <p>
+                        Camp Rainey Mt Office <a href="tel:+17067823733">706-782-3733</a>
+                        Robert Sears, Scoutmaster <a href="tel:+18036069959">803-606-9959</a>
+                        Richard Brock, Summer Camp Coordinator <a href="tel:+180333187169">(803) 318-7169</a>, <a href="mailto:rwbrock@lexhealth.org">rwbrock@lexhealth.org.</a>
+                    </p>
+
+                    <b>Mail</b>
+                    <p style="margin-bottom:0;">
+                        Scout’s Name with Troop 307<br>
+                        Camp Rainey Mt<br>
+                        1494 Rainey Mountain<br>
+                        Clayton, Georgia 30525<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+        <script>
+            // Variables
+            var list = document.querySelector("#taskList");
+            var reset = document.querySelector("#reset");
+            var complete = new Audio("complete.mp3");
+
+            if(localStorage.getItem("listHTML") == null) {
+                saveList();
+            }
+
+            // Load the list from localStorage
+            loadList();
+
+            ///////////////
+            // Functions //
+            ///////////////
+
+
+            function removeTask() {
+                if(event.target.tagName == "LI" && event.target.className == "list-group-item justify-content-between list-group-item-action list-item") {
+                    var self = event.target;
+                    self.remove();
+                    saveList();
+                    complete.play();
+                }
+            }
+
+            // Saves the list's HTML to localStorage when called
+            function saveList() {
+                var html = list.innerHTML;
+                
+                localStorage.setItem("listHTML", html);
+            }
+
+            // Loads the list out of localStorage
+            function loadList() {
+                var html = localStorage.getItem("listHTML");
+                list.innerHTML = html;
+            }
+
+            reset.onclick = function() {
+                localStorage.clear();
+                window.location.reload();
+            }
+        </script>
+    </body>
+</html>
