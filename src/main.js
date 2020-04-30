@@ -1,5 +1,9 @@
 // Import main css
 import '~/assets/style/index.scss';
+// Progressbar with NProgress
+import NProgress from 'nprogress';
+import '~/assets/style/nprogress-307.css';
+
 
 // // Fontawesome
 // import { library } from '@fortawesome/fontawesome-svg-core';
@@ -21,4 +25,14 @@ export default function (Vue, { router, head, isClient }) {
 
   // Fontawesome
   // Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+  // NProgress
+  NProgress.configure({showSpinner: false});
+  router.beforeEach((to, from, next) => {
+    NProgress.start()
+    next()
+  })
+  router.afterEach((to, from) => {
+    NProgress.done()
+  })
 }
