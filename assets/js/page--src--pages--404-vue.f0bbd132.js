@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{197:function(t,e,n){"use strict";n.r(e);var s={metaInfo:{title:"404"}},i=n(18),a=Object(i.a)(s,(function(){var t=this.$createElement,e=this._self._c||t;return e("Page",[e("h1",{staticClass:"is-size-2"},[this._v("\n    Error: 404\n  ")])])}),[],!1,null,null,null);e.default=a.exports}}]);
