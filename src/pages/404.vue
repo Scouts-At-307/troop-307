@@ -1,7 +1,7 @@
 <template>
-  <Layout>
+  <Page>
     <h1 class="is-size-2">Error: 404</h1>
-  </Layout>
+  </Page>
 </template>
 
 <script>
