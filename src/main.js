@@ -25,13 +25,15 @@ export default function (Vue, { router, head, isClient }) {
   // Fontawesome
   // Vue.component('font-awesome-icon', FontAwesomeIcon)
 
-  // NProgress
-  NProgress.configure({ showSpinner: false });
-  router.beforeEach((to, from, next) => {
-    NProgress.start();
-    next();
-  });
-  router.afterEach((to, from) => {
-    NProgress.done();
-  });
+  if (process.isClient) {
+    // NProgress
+    NProgress.configure({ showSpinner: false });
+    router.beforeEach((to, from, next) => {
+      NProgress.start();
+      next();
+    });
+    router.afterEach((to, from) => {
+      NProgress.done();
+    });
+  };
 }

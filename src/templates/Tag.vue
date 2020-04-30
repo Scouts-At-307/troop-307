@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Page>
     <h1 class="title is-size-1 has-text-centered">
       # {{ $page.tag.title }}
     </h1>
@@ -11,7 +11,7 @@
         :post="edge.node"
       />
     </div>
-  </Layout>
+  </Page>
 </template>
 
 <page-query>
