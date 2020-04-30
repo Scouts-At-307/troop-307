@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Page>
     <div class="has-text-centered">
       <h1 class="title is-1">
         {{ $page.post.title }}
@@ -10,7 +10,7 @@
       />
     </div>
 
-    <div class="post content section container">
+    <div class="post content section">
       <figure
         v-if="$page.post.cover_image"
         class="image is-16by9"
@@ -31,7 +31,7 @@
     <div class="post-comments">
       <!-- Add comment widgets here -->
     </div>
-  </Layout>
+  </Page>
 </template>
 
 <script>
