@@ -17,7 +17,7 @@
                         <h2 class="subtitle is-4">
                             {{ $static.metadata.siteDescription }}
                         </h2>
-                        <g-link to="/about" class="is-size-5 has-text-weight-bold">
+                        <g-link to="/about" class="is-size-5 has-text-weight-bold has-text-info">
                             About Us &#8594;
                         </g-link>
                     </div>
@@ -71,6 +71,7 @@ export default {
     object-position: center center;
     width: 100%;
     height: 100%;
+    filter: brightness(80%);
 }
 .hero-background img:nth-of-type(1) {
     animation-name: fader;
