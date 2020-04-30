@@ -17,6 +17,9 @@
                         <h2 class="subtitle is-4">
                             {{ $static.metadata.siteDescription }}
                         </h2>
+                        <g-link to="/about" class="is-size-5 has-text-weight-bold">
+                            About Us &#8594;
+                        </g-link>
                     </div>
                 </div>
             </div>
