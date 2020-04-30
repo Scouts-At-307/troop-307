@@ -12,7 +12,6 @@ import '~/assets/style/nprogress-307.css';
 // library.add(fas);
 
 
-
 // Import default layout so we don't need to import it to every page
 import DefaultLayout from '~/layouts/Default.vue';
 import Page from '~/layouts/Page.vue';
@@ -27,12 +26,12 @@ export default function (Vue, { router, head, isClient }) {
   // Vue.component('font-awesome-icon', FontAwesomeIcon)
 
   // NProgress
-  NProgress.configure({showSpinner: false});
+  NProgress.configure({ showSpinner: false });
   router.beforeEach((to, from, next) => {
-    NProgress.start()
-    next()
-  })
+    NProgress.start();
+    next();
+  });
   router.afterEach((to, from) => {
-    NProgress.done()
-  })
+    NProgress.done();
+  });
 }

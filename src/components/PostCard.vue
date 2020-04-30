@@ -2,13 +2,13 @@
   <div class="card">
     <g-link
       v-if="post.cover_image"
-      class="card-image"
       :to="post.path"
+      class="card-image"
     >
       <figure class="image is-16by9">
         <g-image
-          alt="Cover image"
           :src="post.cover_image"
+          alt="Cover image"
         />
       </figure>
     </g-link>
@@ -20,8 +20,8 @@
         {{ post.title }}
       </g-link>
       <p
-        class="content"
         v-html="post.description"
+        class="content"
       />
       <PostMeta :post="post" />
     </div>
@@ -30,8 +30,8 @@
       class="card-footer"
     >
       <PostTags
-        class="card-footer-item"
         :post="post"
+        class="card-footer-item"
       />
     </div>
   </div>

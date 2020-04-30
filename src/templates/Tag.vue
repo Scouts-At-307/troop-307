@@ -15,25 +15,25 @@
 </template>
 
 <page-query>
-query Tag ($id: ID!) {
-  tag (id: $id) {
-    title
-    belongsTo {
-      edges {
-        node {
-          ...on Post {
-            title
-            path
-            date (format: "D. MMMM YYYY")
-            timeToRead
-            description
-            content
+  query Tag($id: ID!) {
+    tag(id: $id) {
+      title
+      belongsTo {
+        edges {
+          node {
+            ... on Post {
+              title
+              path
+              date(format: "D. MMMM YYYY")
+              timeToRead
+              description
+              content
+            }
           }
         }
       }
     }
   }
-}
 </page-query>
 
 <script>

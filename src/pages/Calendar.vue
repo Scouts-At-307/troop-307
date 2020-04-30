@@ -1,45 +1,53 @@
 <template>
-    <Page>
-        <h1 class="title is-1">{{ title }}</h1>
-        <FullCalendar defaultView="dayGridMonth" :plugins="calendarPlugins" :header="calendarHeader" :events="calendarEvents" :googleCalendarApiKey="googleCalendarApiKey" />
-    </Page>
+  <Page>
+    <h1 class="title is-1">
+      {{ title }}
+    </h1>
+    <FullCalendar
+      :plugins="calendarPlugins"
+      :header="calendarHeader"
+      :events="calendarEvents"
+      :googleCalendarApiKey="googleCalendarApiKey"
+      default-view="dayGridMonth"
+    />
+  </Page>
 </template>
 
 <script>
-import FullCalendar from '@fullcalendar/vue'
-import dayGrid from '@fullcalendar/daygrid'
-import list from '@fullcalendar/list'
-import googleCalendar from '@fullcalendar/google-calendar'
+import FullCalendar from '@fullcalendar/vue';
+import dayGrid from '@fullcalendar/daygrid';
+import list from '@fullcalendar/list';
+import googleCalendar from '@fullcalendar/google-calendar';
 
 export default {
-    components: {
-        FullCalendar
-    },
-    data() {
-        return {
-            title: 'Calendar',
-            calendarPlugins: [
-                dayGrid,
-                list,
-                googleCalendar
-            ],
-            calendarHeader: {
-                left:   'prev,next today',
-                center: 'title',
-                right:  'dayGridMonth,listMonth'
-            },
-            googleCalendarApiKey: 'AIzaSyBcSbvqJZD2Sgtr2Nv4Y7pNXjRPYj-eAjI',
-            calendarEvents: {
-                googleCalendarId: 'scoutsat307@gmail.com'
-            }
-        }
-    },
-    metaInfo() {
-        return {
-            title: this.title,
-        }
-	}
-}
+  components: {
+    FullCalendar,
+  },
+  data() {
+    return {
+      title: 'Calendar',
+      calendarPlugins: [
+        dayGrid,
+        list,
+        googleCalendar,
+      ],
+      calendarHeader: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,listMonth',
+      },
+      googleCalendarApiKey: 'AIzaSyBcSbvqJZD2Sgtr2Nv4Y7pNXjRPYj-eAjI',
+      calendarEvents: {
+        googleCalendarId: 'scoutsat307@gmail.com',
+      },
+    };
+  },
+  metaInfo() {
+    return {
+      title: this.title,
+    };
+  },
+};
 </script>
 
 <style lang='scss'>

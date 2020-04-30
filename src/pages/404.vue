@@ -1,6 +1,8 @@
 <template>
   <Page>
-    <h1 class="is-size-2">Error: 404</h1>
+    <h1 class="is-size-2">
+      Error: 404
+    </h1>
   </Page>
 </template>
 

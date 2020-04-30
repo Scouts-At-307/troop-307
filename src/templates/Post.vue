@@ -5,8 +5,8 @@
         {{ $page.post.title }}
       </h1>
       <PostMeta
-        class="subtitle is-size-6"
         :post="$page.post"
+        class="subtitle is-size-6"
       />
     </div>
 
@@ -16,8 +16,8 @@
         class="image is-16by9"
       >
         <g-image
-          alt="Cover image"
           :src="$page.post.cover_image"
+          alt="Cover image"
         />
       </figure>
 
@@ -58,20 +58,20 @@ export default {
 </script>
 
 <page-query>
-query Post ($id: ID!) {
-  post: post (id: $id) {
-    title
-    path
-    date (format: "D. MMMM YYYY")
-    timeToRead
-    tags {
-      id
+  query Post($id: ID!) {
+    post: post(id: $id) {
       title
       path
+      date(format: "D. MMMM YYYY")
+      timeToRead
+      tags {
+        id
+        title
+        path
+      }
+      description
+      content
+      cover_image(width: 860, blur: 10)
     }
-    description
-    content
-    cover_image (width: 860, blur: 10)
   }
-}
 </page-query>
