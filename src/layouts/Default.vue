@@ -34,42 +34,49 @@
                             Unit Home
                         </a>
                         <g-link
-                            class="navbar-item is-active"
+                            exact-active-class="is-active"
+                            class="navbar-item"
                             to="/"
                         >
                             Home
                         </g-link>
                         <g-link
+                            active-class="is-active"
                             class="navbar-item"
                             to="/about"
                         >
                             About
                         </g-link>
                         <g-link
+                            active-class="is-active"
                             class="navbar-item"
                             to="/photos"
                         >
                             Photos
                         </g-link>
                         <g-link
+                            active-class="is-active"
                             class="navbar-item"
                             to="/calendar"
                         >
                             Calendar
                         </g-link>
                         <g-link
+                            active-class="is-active"
                             class="navbar-item"
                             to="/links"
                         >
                             Links
                         </g-link>
                         <g-link
+                            active-class="is-active"
                             class="navbar-item"
                             to="/summer-camp"
                         >
                             Summer Camp
                         </g-link>
                         <g-link
+                            active-class="is-active"
                             class="navbar-item"
                             to="/forms"
                         >
