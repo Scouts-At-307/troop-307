@@ -32,6 +32,14 @@ module.exports = {
         },
       },
     },
+    {
+      use: 'gridsome-plugin-netlify-cms',
+      options: {
+        publicPath: '/admin',
+        htmlTitle: 'Admin - Troop 307',
+        modulePath: `src/admin/index.js`,
+      },
+    },
   ],
 
   transformers: {
