@@ -2,7 +2,7 @@ backend:
   name: github
   repo: scoutsat307/troop-307
   branch: master
-  site_domain: http://scoutsat307.github.io/
+  site_domain: https://objective-lewin-6fbf9d.netlify.app/
 
 media_folder: "content/images"
 
