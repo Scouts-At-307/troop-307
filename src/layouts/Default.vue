@@ -132,7 +132,7 @@ export default {
   methods: {
     fixFooter() {
       const footerHeight = `${this.$refs.bsaFooter.clientHeight}px`;
-      document.querySelector('body').style.marginBottom = footerHeight;
+      document.querySelector('body').style.paddingBottom = footerHeight;
     },
   },
 };

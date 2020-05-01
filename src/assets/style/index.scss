@@ -33,6 +33,11 @@ $custom-colors: (
 html {
     position: relative;
     min-height: 100%;
+    background-color: $primary;
+}
+body {
+    background-color: white;
+    min-height: 100vh;
 }
 .bsa-footer {
     width: 100%;
