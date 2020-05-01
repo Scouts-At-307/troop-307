@@ -24,6 +24,12 @@
   </Page>
 </template>
 
+<style scoped>
+  .justified-item img {
+    height: 100%;
+  }
+</style>
+
 <script>
 import {VueJustifiedLayout} from 'vue-justified-layout';
 
