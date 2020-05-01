@@ -8,8 +8,7 @@ module.exports = {
   siteName: 'Troop 307',
   siteDescription: 'Boy Scout Troop chartered by Saxe Gotha Presbyterian Church in Lexington, South Carolina.',
 
-  siteUrl: 'https://scoutsat307.github.io',
-  pathPrefix: '/troop-307',
+  siteUrl: 'https://michael.tru.io',
 
   templates: {
     Post: '/:title',
@@ -35,7 +34,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-netlify-cms',
       options: {
-        publicPath: '/troop-307/admin',
+        publicPath: '/admin',
         htmlTitle: 'Admin - Troop 307',
         modulePath: `src/admin/index.js`,
       },
