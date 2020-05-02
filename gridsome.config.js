@@ -11,17 +11,27 @@ module.exports = {
   siteUrl: 'https://scoutsat307.sly.io',
 
   templates: {
-    Post: '/:title',
+    MarkdownPage: '/:slug',
+    Post: '/posts/:title',
     Tag: '/tag/:id',
   },
 
   plugins: [
+    {
+      // Create pages from markdown files
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'MarkdownPage',
+        path: 'content/pages/*.md',
+      },
+    },
     {
       // Create posts from markdown files
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Post',
         path: 'content/posts/*.md',
+        pathPrefix: '/posts',
         refs: {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
