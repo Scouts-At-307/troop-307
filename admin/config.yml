@@ -21,3 +21,12 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    folder: "content/pages"
+    create: true
+    slug: "{{title}}"
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Content", name: "body", widget: "markdown"}
