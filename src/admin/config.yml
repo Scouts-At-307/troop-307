@@ -4,7 +4,7 @@ backend:
   branch: master
   site_domain: objective-lewin-6fbf9d.netlify.app
 
-media_folder: "content/images"
+media_folder: "static/uploads"
 
 publish_mode: editorial_workflow
 
@@ -30,3 +30,16 @@ collections:
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Content", name: "body", widget: "markdown"}
+  - name: "albums"
+    label: "Photos"
+    label_singular: "Album"
+    folder: "content/albums"
+    create: true
+    slug: "{{id}}"
+    fields: 
+      - label: "Photos"
+        name: "gallery"
+        widget: "image"
+        media_library: 
+          config: 
+            multiple: true
