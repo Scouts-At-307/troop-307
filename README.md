@@ -2,6 +2,8 @@
 
 > Boy Scout Troop chartered by Saxe Gotha Presbyterian Church in Lexington, South Carolina.
 
+![Build & Deploy](https://github.com/scoutsat307/troop-307/workflows/Build%20&%20Deploy/badge.svg)
+
 ## About this site
 - Grindsome
 - Bulma
