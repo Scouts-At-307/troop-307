@@ -9,6 +9,6 @@ Summer Camp 2020 will be June 19th to 25th at [Camp Rainey Mountain](https://www
 
 Please consider giving your son an experience that he will remember for a lifetime.
 
-[Summer Camp Checklist](camp-list.html) - [Printable](uploads/summer-camp-checklist.pdf)   
-[Camp Rainey Mountain Signup Form](https://www.cognitoforms.com/ScoutsAt307/CampRaineyMountainSignupForm) - [Printable](uploads/crm-signup-form.pdf)  
+[Summer Camp Checklist](camp-list.html) - [Printable](uploads/summer-camp-checklist.pdf)  
+[Camp Rainey Mountain Signup Form](https://www.cognitoforms.com/ScoutsAt307/CampRaineyMountainSignupForm) - [Printable](uploads/crm-form-printable.pdf)  
 [2016 CRM Course Schedule](uploads/CourseSchedule2016.pdf)
