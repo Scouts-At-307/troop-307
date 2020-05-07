@@ -8,7 +8,7 @@
         That's an error.
       </h2>
       <h4 class="is-size-4">
-        The page that you think should be here, isn't here.
+        The page you think should be here, isn't here.
       </h4>
       <br />
       <g-link to="/" class="button is-secondary">
