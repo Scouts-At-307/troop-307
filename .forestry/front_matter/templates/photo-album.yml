@@ -19,5 +19,3 @@ fields:
   config: {}
   label: Photos
   description: Upload photos for the album here.
-pages:
-- content/albums/test.md
