@@ -23,10 +23,13 @@
         </div>
 
         <div
-          :class="{ 'is-active': showNav } "
+          :class="{ 'is-active': showNav }"
           class="navbar-menu"
         >
-          <div class="navbar-end">
+          <div 
+            class="navbar-end" 
+            @click="showNav = false"
+          >
             <a
               class="navbar-item"
               href="//scoutsat307.org"
