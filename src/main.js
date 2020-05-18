@@ -4,14 +4,6 @@ import '~/assets/style/index.scss';
 import NProgress from 'nprogress';
 import '~/assets/style/nprogress-307.css';
 
-
-// // Fontawesome
-// import { library } from '@fortawesome/fontawesome-svg-core';
-// import { fas } from '@fortawesome/free-solid-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-// library.add(fas);
-
-
 // Import default layout so we don't need to import it to every page
 import DefaultLayout from '~/layouts/Default.vue';
 import Page from '~/layouts/Page.vue';
@@ -22,8 +14,11 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
   Vue.component('Page', Page);
 
-  // Fontawesome
-  // Vue.component('font-awesome-icon', FontAwesomeIcon)
+  // Theme color
+  head.meta.push({
+    name: 'theme-color',
+    content: '#e53935'
+  });
 
   if (process.isClient) {
     // NProgress
