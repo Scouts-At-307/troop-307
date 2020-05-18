@@ -5,9 +5,10 @@
 ![Build & Deploy](https://github.com/scoutsat307/troop-307/workflows/Build%20&%20Deploy/badge.svg)
 
 ## About this site
-- Grindsome
+- Gridsome
 - Bulma
-- Directus for content
+- Netlify CMS
+- Photo gallery with Lychee
 - Hosted on GitHub Pages
 - GitHub Actions for automatic builds
 
