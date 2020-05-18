@@ -2,13 +2,13 @@
   <div class="card">
     <g-link
       v-if="form.cover_image"
-      :to="form.path"
+      :to="form.link"
       class="card-image"
     >
       <figure class="image is-16by9">
         <g-image
           :src="form.cover_image"
-          alt="Cover image"
+          :alt="form.title"
         />
       </figure>
     </g-link>
@@ -23,6 +23,16 @@
         class="content"
       />
     </div>
+    <footer class="card-footer" v-if="form.buttons">
+      <g-link 
+        class="card-footer-item"
+        v-for="button in form.buttons"
+        :key="button"
+        :to="button.link"
+      >
+        {{ button.label }}
+      </g-link>
+    </footer>
   </div>
 </template>
 

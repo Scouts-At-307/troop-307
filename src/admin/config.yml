@@ -39,4 +39,11 @@ collections:
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Cover Image", name: "cover_image", widget: "image"}
-      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Description", name: "body", widget: "markdown"}
+      - label: "Buttons"
+        label_singular: "Button"
+        name: "buttons"
+        widget: "list"
+        fields:
+          - {label: "Label", name: "label", widget: "string"}
+          - {label: "Link", name: "link", widget: "string"}
