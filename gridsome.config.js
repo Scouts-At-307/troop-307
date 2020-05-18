@@ -18,6 +18,13 @@ module.exports = {
 
   plugins: [
     {
+      use: 'gridsome-plugin-netlify-cms',
+      options: {
+        publicPath: '/admin',
+        htmlTitle: 'Admin - Troop 307',
+      },
+    },
+    {
       // Create pages from markdown files
       use: '@gridsome/source-filesystem',
       options: {
@@ -39,6 +46,14 @@ module.exports = {
             create: true,
           },
         },
+      },
+    },
+    {
+      // Create forms from markdown files
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Form',
+        path: 'content/forms/*.md',
       },
     },
   ],

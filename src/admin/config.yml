@@ -1,0 +1,42 @@
+backend:
+  name: github
+  repo: scoutsat307/troop-307
+  branch: master
+  site_domain: objective-lewin-6fbf9d.netlify.app
+
+media_folder: "static/uploads"
+
+publish_mode: editorial_workflow
+
+collections: 
+  - name: "news"
+    label: "News"
+    label_singular: "Post"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    folder: "content/pages"
+    create: true
+    slug: "{{title}}"
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Content", name: "body", widget: "markdown"}
+  - name: "forms"
+    label: "Forms"
+    label_singular: "Form"
+    folder: "content/forms"
+    create: true
+    slug: "{{title}}"
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Cover Image", name: "cover_image", widget: "image"}
+      - {label: "Description", name: "description", widget: "markdown"}

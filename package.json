@@ -36,6 +36,7 @@
     "bulma-helpers": "^0.3.10",
     "bulmaswatch": "^0.8.1",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
     "netlify-cms": "^2.10.47",
     "nprogress": "^0.2.0",
     "photoswipe": "^4.1.3",
