@@ -26,8 +26,8 @@
     <footer class="card-footer" v-if="form.buttons">
       <g-link 
         class="card-footer-item"
-        v-for="button in form.buttons"
-        :key="button"
+        v-for="(button, index) in form.buttons"
+        :key="index"
         :to="button.link"
       >
         {{ button.label }}
