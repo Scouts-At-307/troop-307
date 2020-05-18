@@ -24,14 +24,15 @@
       />
     </div>
     <footer class="card-footer" v-if="form.buttons">
-      <g-link 
+      <a
         class="card-footer-item"
         v-for="(button, index) in form.buttons"
         :key="index"
-        :to="button.link"
+        :href="button.link"
+        target="_blank"
       >
         {{ button.label }}
-      </g-link>
+      </a>
     </footer>
   </div>
 </template>
