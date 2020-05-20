@@ -7,3 +7,4 @@ dist
 .env
 .env.*
 troop-307
+src/assets/starred-photos

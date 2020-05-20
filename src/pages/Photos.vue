@@ -5,21 +5,26 @@
     </h1>
     <nav
       id="photos-breadcrumb"
-      class="breadcrumb is-medium has-background-white-ter"
-      aria-label="breadcrumbs"
+      class="is-medium is-size-5 has-background-white-ter"
     >
-      <ul>
-        <li class="is-active">
-          <a
-            href="#"
-            aria-current="page"
-          >Home</a>
+      <ul style="display:flex">
+        <li>
+          Favorite Photos
+        </li>
+        <li style="margin-left:auto">
+          <a 
+            class="button is-black is-small" 
+            href="//gallery-troop.scoutsat307.org"
+            target="_blank"
+          >
+            All photos →
+          </a>
         </li>
       </ul>
     </nav>
 
     <vue-justified-layout :items="images" v-slot="{item, style, index}">
-      <img v-preview:scope-a :src="item.url" />
+      <g-image v-preview:scope-a :src="item.image" />
     </vue-justified-layout>
   </Page>
 </template>
@@ -29,6 +34,21 @@
     height: 100%;
   }
 </style>
+
+<page-query>
+  query {
+    photos: allStarredPhotos(sortBy: "id") {
+      edges {
+        node {
+          id
+          height
+          width
+          image
+        }
+      }
+    }
+  }
+</page-query>
 
 <script>
 import {VueJustifiedLayout} from 'vue-justified-layout';
@@ -51,38 +71,7 @@ export default {
   data() {
     return {
       title: 'Photos',
-      images: [
-        {
-          width: 250,
-          height: 400,
-          url: 'https://source.unsplash.com/featured/250x400?green,blue'
-        }, 
-        {
-          width: 600,
-          height: 400,
-          url: 'https://source.unsplash.com/featured/600x400?red,blue'
-        },
-        {
-          width: 250,
-          height: 400,
-          url: 'https://source.unsplash.com/featured/250x400?green,purple'
-        }, 
-        {
-          width: 600,
-          height: 400,
-          url: 'https://source.unsplash.com/featured/600x400?orange,blue'
-        },
-        {
-          width: 250,
-          height: 400,
-          url: 'https://source.unsplash.com/featured/250x400?yellow,purple'
-        }, 
-        {
-          width: 600,
-          height: 400,
-          url: 'https://source.unsplash.com/featured/600x400?yellow,blue'
-        },
-      ],
+      images: []
     };
   },
   metaInfo() {
@@ -90,6 +79,11 @@ export default {
       title: this.title,
     };
   },
+  mounted() {
+    this.$page.photos.edges.forEach(edge => {
+      this.images.push(edge.node);
+    });
+  }
 };
 </script>
 
