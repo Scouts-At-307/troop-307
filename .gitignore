@@ -8,3 +8,4 @@ dist
 .env.*
 troop-307
 src/assets/starred-photos
+static/.git-example
