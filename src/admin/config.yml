@@ -5,6 +5,7 @@ backend:
   site_domain: objective-lewin-6fbf9d.netlify.app
 
 media_folder: "static/uploads"
+public_folder: '/uploads'
 
 publish_mode: editorial_workflow
 

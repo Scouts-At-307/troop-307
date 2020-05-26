@@ -39,6 +39,7 @@ module.exports = {
         typeName: 'Post',
         path: 'content/posts/*.md',
         pathPrefix: '/posts',
+        coverField: 'cover_image',
         refs: {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
@@ -54,6 +55,13 @@ module.exports = {
       options: {
         typeName: 'Form',
         path: 'content/forms/*.md',
+        coverField: 'cover_image',
+      },
+    },
+    {
+      use: 'gridsome-plugin-netlify-cms-paths',
+      options: { 
+        contentTypes: ['Form','Post','MarkdownPage'],
       },
     },
   ],
