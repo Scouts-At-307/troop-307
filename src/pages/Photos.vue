@@ -7,9 +7,9 @@
       id="photos-breadcrumb"
       class="is-medium is-size-5 has-background-white-ter"
     >
-      <ul style="display:flex">
+      <ul>
         <li>
-          Favorite Photos
+          Home
         </li>
         <li style="margin-left:auto">
           <a 
@@ -34,21 +34,6 @@
     height: 100%;
   }
 </style>
-
-<page-query>
-  query {
-    photos: allStarredPhotos(sortBy: "id") {
-      edges {
-        node {
-          id
-          height
-          width
-          image
-        }
-      }
-    }
-  }
-</page-query>
 
 <script>
 import {VueJustifiedLayout} from 'vue-justified-layout';
@@ -79,11 +64,6 @@ export default {
       title: this.title,
     };
   },
-  mounted() {
-    this.$page.photos.edges.forEach(edge => {
-      this.images.push(edge.node);
-    });
-  }
 };
 </script>
 
