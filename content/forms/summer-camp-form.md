@@ -1,6 +1,6 @@
 ---
 title: Summer Camp Form
-cover_image: /static/uploads/crm.png
+cover_image: /uploads/crm.png
 buttons:
   - label: Open
     link: https://www.cognitoforms.com/ScoutsAt307/CampRaineyMountainSignupForm

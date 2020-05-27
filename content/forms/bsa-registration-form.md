@@ -1,6 +1,6 @@
 ---
 title: BSA Registration Form
-cover_image: /static/uploads/logo.png
+cover_image: /uploads/logo.png
 buttons:
   - label: Download
     link: /uploads/bsa-registration-form.pdf

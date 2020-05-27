@@ -5,12 +5,11 @@
       :to="form.link"
       class="card-image"
     >
-      <figure class="image is-16by9">
         <g-image
           :src="form.cover_image"
           :alt="form.title"
+          class="form-cover-image"
         />
-      </figure>
     </g-link>
     <div class="card-content">
       <h1
@@ -36,6 +35,13 @@
     </footer>
   </div>
 </template>
+
+<style scoped>
+  .form-cover-image {
+    margin: 0 auto; 
+    display: block;
+  }
+</style>
 
 <script>
 export default {

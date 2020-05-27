@@ -1,10 +1,22 @@
 <template>
   <Layout>
     <!-- Hero, maybe -->
+    <section class="hero is-medium is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-size-2">
+            Forms & Registration
+          </h1>
+          <h2 class="subtitle">
+            Get you and your scout registered, all online.
+          </h2>
+        </div>
+      </div>
+    </section>
     <!-- List forms -->
     <section class="section posts">
       <div class="container">
-        <div class="columns is-desktop">
+        <div id="form-columns" class="columns is-desktop">
           <div class="column" v-if="$page.forms.edges.length >= 1">
             <FormCard
               v-for="edge in filteredForms(1, 3)"
@@ -31,6 +43,13 @@
     </section>
   </Layout>
 </template>
+
+<style scoped>
+  #form-columns .column {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+</style>
 
 <page-query>
   query {

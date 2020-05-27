@@ -1,6 +1,6 @@
 ---
 title: Leader Online Training
-cover_image: /static/uploads/trained.png
+cover_image: /uploads/trained.png
 buttons:
   - label: Open
     link: https://www.scouting.org/training/adult/
