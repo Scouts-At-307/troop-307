@@ -1,16 +1,10 @@
 <template>
   <div class="card">
-    <g-link
-      v-if="form.cover_image"
-      :to="form.link"
-      class="card-image"
-    >
-        <g-image
-          :src="form.cover_image"
-          :alt="form.title"
-          class="form-cover-image"
-        />
-    </g-link>
+      <g-image
+        :src="form.cover_image"
+        :alt="form.title"
+        class="card-image"
+      />
     <div class="card-content">
       <h1
         class="is-size-4 has-text-weight-bold"
@@ -37,9 +31,11 @@
 </template>
 
 <style scoped>
-  .form-cover-image {
+  .card-image {
     margin: 0 auto; 
     display: block;
+    object-fit: contain;
+    max-height: 500px;
   }
 </style>
 
