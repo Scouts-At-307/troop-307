@@ -30,61 +30,35 @@
             class="navbar-end" 
             @click="showNav = false"
           >
-            <a
-              class="navbar-item"
-              href="//scoutsat307.org"
-            >
-              Unit Home
-            </a>
-            <g-link
-              exact-active-class="is-active"
-              class="navbar-item"
-              to="/"
-            >
-              Home
-            </g-link>
-            <g-link
-              active-class="is-active"
-              class="navbar-item"
-              to="/about"
-            >
-              About
-            </g-link>
-            <g-link
-              active-class="is-active"
-              class="navbar-item"
-              to="/photos"
-            >
-              Photos
-            </g-link>
-            <g-link
-              active-class="is-active"
-              class="navbar-item"
-              to="/calendar"
-            >
-              Calendar
-            </g-link>
-            <g-link
-              active-class="is-active"
-              class="navbar-item"
-              to="/links"
-            >
-              Links
-            </g-link>
-            <g-link
-              active-class="is-active"
-              class="navbar-item"
-              to="/summer-camp"
-            >
-              Summer Camp
-            </g-link>
-            <g-link
-              active-class="is-active"
-              class="navbar-item"
-              to="/forms"
-            >
-              Forms and Registration
-            </g-link>
+            <!-- Generate Navbar menu from GraphQL data -->
+            <template v-for="item in $static.menu.edges">
+              <a
+                v-if="item.node.external"
+                v-bind:key="item.node.id"
+                class="navbar-item"
+                :href="item.node.link"
+              >
+                {{item.node.name}}
+              </a>
+              <g-link
+                v-else-if="item.node.link == '/'"
+                v-bind:key="item.node.id"
+                exact-active-class="is-active"
+                class="navbar-item"
+                :to="item.node.link"
+              >
+                {{item.node.name}}
+              </g-link>
+              <g-link
+                v-else
+                v-bind:key="item.node.id"
+                active-class="is-active"
+                class="navbar-item"
+                :to="item.node.link"
+              >
+                {{item.node.name}}
+              </g-link>
+            </template>
           </div>
         </div>
       </div>
@@ -105,6 +79,21 @@
     />
   </div>
 </template>
+
+<static-query>
+  query {
+    menu: allMenu(order: ASC) {
+      edges {
+        node {
+          id
+          name
+          link
+          external
+        }
+      }
+    }
+  }
+</static-query>
 
 <script>
 import Logo from '~/components/Logo.vue';

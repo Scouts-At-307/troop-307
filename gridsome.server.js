@@ -5,7 +5,24 @@
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+// Load menu from YAML
+const fs = require('fs');
+const yaml = require('js-yaml');
+
+const fileContents = fs.readFileSync('./content/menu.yml', 'utf8');
+const menu = yaml.safeLoad(fileContents);
+
 module.exports = function (api) {
+  // Menu Collection
+  api.loadSource(async actions => {
+    const collection = actions.addCollection('Menu')
+
+    for (const item of menu.items) {
+      collection.addNode(item);
+    }
+  });
+ 
+  // Define content types
   api.loadSource(({ addSchemaTypes }) => {
     addSchemaTypes(`
       type Post implements Node {
