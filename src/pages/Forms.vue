@@ -5,7 +5,7 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title is-size-2">
-            Forms & Registration
+            Forms &amp; Registration
           </h1>
           <h2 class="subtitle">
             Get you and your scout registered, all online.
