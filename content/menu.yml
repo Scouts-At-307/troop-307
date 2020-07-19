@@ -1,7 +1,7 @@
 items:
   - name: Unit Home
     external: true
-    link: //scoutsat307.org
+    link: //scoutsat307.sly.io
   - name: Home
     link: /
   - name: About
