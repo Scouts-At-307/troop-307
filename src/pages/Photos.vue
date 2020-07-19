@@ -1,75 +1,25 @@
 <template>
-  <Page>
-    <h1 class="title is-1">
-      {{ title }}
-    </h1>
-    <nav
-      id="photos-breadcrumb"
-      class="is-medium is-size-5 has-background-white-ter"
-    >
-      <ul>
-        <li>
-          Home
-        </li>
-        <li style="margin-left:auto">
-          <a 
-            class="button is-black is-small" 
-            href="//gallery-troop.scoutsat307.org"
-            target="_blank"
-          >
-            All photos →
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <vue-justified-layout :items="images" v-slot="{item, style, index}">
-      <g-image v-preview:scope-a :src="item.image" />
-    </vue-justified-layout>
-  </Page>
+  <Layout>
+    <iframe id="photosFrame" src="https://lycheeorg.github.io/demo/"></iframe>
+  </Layout>
 </template>
 
 <style scoped>
-  .justified-item img {
+  #photosFrame {
     height: 100%;
+    width: 100%;
   }
 </style>
 
 <script>
-import {VueJustifiedLayout} from 'vue-justified-layout';
-
-import PhotoSwipe from 'photoswipe/dist/photoswipe'
-import PhotoSwipeUI from 'photoswipe/dist/photoswipe-ui-default'
-import 'photoswipe/dist/photoswipe.css'
-import 'photoswipe/dist/default-skin/default-skin.css'
-import createPreviewDirective from "vue-photoswipe-directive";
-
 export default {
-  components: {
-    VueJustifiedLayout,
+  metaInfo: {
+    title: "Photos",
   },
-  directives: {
-    preview: createPreviewDirective({
-      bgOpacity: 0.9,
-    }, PhotoSwipe, PhotoSwipeUI),
-  },
-  data() {
-    return {
-      title: 'Photos',
-      images: []
-    };
-  },
-  metaInfo() {
-    return {
-      title: this.title,
-    };
-  },
+  mounted() {
+    document.querySelector('.bsa-footer').style.display = "none";
+    document.querySelector('body').style.paddingBottom = "0";
+    document.querySelector('main').style.height = "calc(100vh - 64px)";
+  }
 };
 </script>
-
-<style lang="scss">
-    #photos-breadcrumb {
-        padding: 12px 16px;
-        border-radius: .25rem;
-    }
-</style>
