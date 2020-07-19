@@ -1,8 +1,7 @@
 ---
 canonical_url: false
-published: true
 date: 2019-01-07T00:00:00.000Z
-cover_image: ./images/alexandr-podvalny-220262-unsplash.jpg
+cover_image: /uploads/crm.png
 series: false
 title: A post with a cover
 tags:

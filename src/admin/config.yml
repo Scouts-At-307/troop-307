@@ -31,6 +31,7 @@ collections:
     slug: "{{title}}"
     fields: 
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Content", name: "body", widget: "markdown"}
   - name: "forms"
     label: "Forms"

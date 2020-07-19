@@ -1,7 +1,6 @@
 ---
 title: Markdown test file
 date: 2019-02-06
-published: true
 tags: ['Markdown','Test files']
 canonical_url: false
 description: "Markdown is intended to be as easy-to-read and easy-to-write as is feasible. Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions."
@@ -43,13 +42,6 @@ cosmetic -- you can use this if you think it looks better. The
 closing hashes don't even need to match the number of hashes
 used to open the header. (The number of opening hashes
 determines the header level.)
-
-
-### Images
-
-Images are added with `![Image Alt](./images/image.jpg)`
-
-![Image](./images/alexandr-podvalny-220262-unsplash.jpg)
 
 
 ### Blockquotes

@@ -1,7 +1,6 @@
 ---
 title: Summer Camp
 slug: summer-camp
-
 ---
 You can't have Scouting without "outing". The Outdoor Program is one of the principal features of Scouting that appeals to boys, and a week at Summer Camp is the highest experience.
 
