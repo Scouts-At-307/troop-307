@@ -20,6 +20,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Cover Image", name: "cover_image", widget: "image"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
@@ -30,6 +31,7 @@ collections:
     slug: "{{title}}"
     fields: 
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Content", name: "body", widget: "markdown"}
   - name: "forms"
     label: "Forms"
@@ -48,3 +50,24 @@ collections:
         fields:
           - {label: "Label", name: "label", widget: "string"}
           - {label: "Link", name: "link", widget: "string"}
+  - name: "settings"
+    label: "Settings"
+    files: 
+      - label: "Menu"
+        name: "menu"
+        file: "content/menu.yml"
+        fields: 
+          - label: "Menu Items"
+            name: "items"
+            widget: list
+            fields: 
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "External?"
+                name: "external"
+                widget: "boolean"
+                required: false
+              - label: "Link"
+                name: "link"
+                widget: "string"
