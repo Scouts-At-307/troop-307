@@ -1,0 +1,18 @@
+items:
+  - name: Unit Home
+    external: true
+    link: //scoutsat307.org
+  - name: Home
+    link: /
+  - name: About
+    link: /about
+  - name: Photos
+    link: /photos
+  - name: Calendar
+    link: /calendar
+  - name: Links
+    link: /links
+  - name: Summer Camp
+    link: /summer-camp
+  - name: Forms & Registration
+    link: /forms
