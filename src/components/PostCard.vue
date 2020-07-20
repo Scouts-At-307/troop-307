@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card is-horizontal">
     <g-link
       v-if="post.cover_image"
       :to="post.path"
@@ -24,8 +24,7 @@
         class="content"
       />
       <PostMeta :post="post" />
-    </div>
-    <div
+      <div
       v-if="post.tags"
       class="card-footer"
     >
@@ -34,6 +33,8 @@
         class="card-footer-item"
       />
     </div>
+    </div>
+    
   </div>
 </template>
 
