@@ -27,15 +27,10 @@ $custom-colors: (
 
 .card {
   margin-bottom: 1rem;
+}
 
-  // Flex content order putting `.card-image` on right /* NOTE: Add this line */
-  &.card--reverse-order {
-    /* NOTE: Add this line */
-    flex-direction: row-reverse;
-    /* NOTE: Add this line */
-  }
-
-  &.is-horizontal {
+@media (min-width: $tablet) {
+  .card.is-horizontal  {
     // flex-direction: row /* NOTE: Remove this line */
     display: flex;
     flex-basis: 50ex;
@@ -62,7 +57,7 @@ $custom-colors: (
     }
 
     .card-content {
-      flex: 3
+      flex: 3;
     }
   }
 }
