@@ -20,8 +20,8 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Cover Image", name: "cover_image", widget: "image"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
@@ -42,7 +42,7 @@ collections:
     slug: "{{title}}"
     fields: 
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Cover Image", name: "cover_image", widget: "image"}
+      - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
       - {label: "Description", name: "body", widget: "markdown"}
       - label: "Buttons"
         label_singular: "Button"
