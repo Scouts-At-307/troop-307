@@ -3,7 +3,7 @@ title: COVID-19 Update
 date: 2020-11-05T23:43:42.227Z
 tags:
   - COVID19
-cover_image: r-2726564-1298286245.jpeg.jpg
+cover_image: ""
 description: A quick update on our COVID restrictions and programs for 2020.
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio morbi quis. Fringilla urna porttitor rhoncus dolor purus. Vel pretium lectus quam id leo in vitae turpis massa. Metus vulputate eu scelerisque felis imperdiet proin. Arcu felis bibendum ut tristique et. Egestas dui id ornare arcu odio ut sem nulla. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus at ultrices mi tempus imperdiet. Ornare arcu dui vivamus arcu. Ut faucibus pulvinar elementum integer enim neque volutpat. At tellus at urna condimentum mattis pellentesque id nibh tortor. Cras sed felis eget velit aliquet sagittis id consectetur. Facilisis leo vel fringilla est ullamcorper eget. Amet commodo nulla facilisi nullam vehicula. Ornare arcu dui vivamus arcu felis bibendum ut.
