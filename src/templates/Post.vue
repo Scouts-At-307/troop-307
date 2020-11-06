@@ -18,6 +18,7 @@
         <g-image
           :src="$page.post.cover_image"
           alt="Cover image"
+          style="object-fit:contain;"
         />
       </figure>
 
