@@ -1,6 +1,6 @@
 <template>
     <FullCalendar
-      :plugins="calendarPlugins"
+      :options="calendarOptions"
       :header="calendarHeader"
       :events="calendarEvents"
       :googleCalendarApiKey="googleCalendarApiKey"
@@ -20,29 +20,22 @@ export default {
   },
   data() {
     return {
-      calendarPlugins: [
-        dayGrid,
-        list,
-        googleCalendar,
-      ],
-      calendarHeader: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'dayGridMonth,listMonth',
-      },
-      googleCalendarApiKey: 'AIzaSyBcSbvqJZD2Sgtr2Nv4Y7pNXjRPYj-eAjI',
-      calendarEvents: {
-        googleCalendarId: 'scoutsat307@gmail.com',
+      calendarOptions: {
+        plugins: [
+          dayGrid,
+          list,
+          googleCalendar
+        ],
+        initialView: 'dayGridMonth',
+        googleCalendarApiKey: 'AIzaSyBcSbvqJZD2Sgtr2Nv4Y7pNXjRPYj-eAjI',
+        events: { googleCalendarId: 'scoutsat307@gmail.com' },
+        headerToolbar: {
+          left: 'dayGridMonth,listMonth',
+          center: 'title',
+          right: 'prev,next today'
+        }
       },
     };
   },
 };
 </script>
-
-<style lang='scss'>
-
-@import '~@fullcalendar/core/main.css';
-@import '~@fullcalendar/daygrid/main.css';
-@import '~@fullcalendar/list/main.css';
-
-</style>

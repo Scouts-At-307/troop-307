@@ -59,12 +59,6 @@ module.exports = {
         coverField: 'cover_image',
       },
     },
-    {
-      use: 'gridsome-plugin-netlify-cms-paths',
-      options: { 
-        contentTypes: ['Form', 'Post'],
-      },
-    },
   ],
 
   transformers: {
