@@ -9,6 +9,7 @@
         <g-image
           :src="post.cover_image"
           alt="Cover image"
+          style="object-fit:cover;"
         />
       </figure>
     </g-link>
