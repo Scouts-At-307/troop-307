@@ -17,6 +17,7 @@ collections:
     folder: "content/posts"
     create: true
     path: '{{year}}-{{month}}-{{day}}-{{slug}}/{{slug}}'
+    public_folder: "./"
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -39,7 +40,8 @@ collections:
     label_singular: "Form"
     folder: "content/forms"
     create: true
-    slug: "{{title}}"
+    path: "{{slug}}/form"
+    public_folder: "./"
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
