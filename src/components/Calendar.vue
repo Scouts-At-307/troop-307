@@ -1,9 +1,6 @@
 <template>
     <FullCalendar
       :options="calendarOptions"
-      :header="calendarHeader"
-      :events="calendarEvents"
-      :googleCalendarApiKey="googleCalendarApiKey"
       default-view="dayGridMonth"
     />
 </template>
