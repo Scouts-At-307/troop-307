@@ -2,6 +2,7 @@ backend:
   name: github
   repo: scoutsat307/troop-307
   branch: master
+  open_authoring: true
   site_domain: objective-lewin-6fbf9d.netlify.app
 
 media_folder: "static/uploads"
